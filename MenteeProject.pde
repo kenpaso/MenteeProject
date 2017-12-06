@@ -10,7 +10,7 @@ public void draw()
 	background(255,255,255);
 	fill(255,0,0);
 	strokeWeight(7);
-	myFractal(250,paso,500);
+	myFractal(250,paso,250);
 	if(paso<1500)
 	{
 		paso++;
@@ -23,12 +23,12 @@ public void draw()
 }
 public void myFractal(int x, int y, int siz)
 {
-	fill((int)(Math.random()*255),0,0);
+	fill((int)(Math.random()*255),21,0);
 	ellipse(x, y, siz, siz);
-	if(siz >15)
+	if(siz >5)
 	{
-		myFractal(x, (y-siz/3), siz/2);
-		myFractal(x, (y+siz/3), siz/2);
+		myFractal(x+10, (y-siz/3), siz/2);
+		myFractal(x+10, (y+siz/3), siz/2);
 		
 	}
 }
