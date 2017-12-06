@@ -40,7 +40,7 @@ public void draw()
 	redFractal(305,woo+21,22);
 	greenFractal(130,woo-20,12);
 
-	redFractal(125,woo-50,10);
+	redFractal(125,woo-50gig,10);
 	greenFractal(490,woo-100,10);
 
 	redFractal(445,woo-150,20);
